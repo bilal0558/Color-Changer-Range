@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Colors</title>
+</head>
+<body id="body" onload="changeColor()">
+    
+    <div class="container">
+        <div class="box">
+            <span class="header">
+                <h1>Color Changer</h1>
+                <p class="text">Use the Red, Green and Blue Sliders to adjust the rgb values.</p>
+            </span>
+            <span>
+                <input type="range" id="red-val" min="0" max="255" oninput="changeColor()">
+                <input type="text" id="red-text-val" class="colorVal" min="0" max="255" placeholder="Red Value" readonly>
+            </span>
+            <span>
+                <input type="range" id="green-val" min="0" max="255" oninput="changeColor()">
+                <input type="text" id="green-text-val" class="colorVal" min="0" max="255" placeholder="Green Value" readonly>
+            </span>
+            <span>
+                <input type="range" id="blue-val" min="0" max="255" oninput="changeColor()">
+                <input type="text" id="blue-text-val" class="colorVal" min="0" max="255" placeholder="Blue Value" readonly>
+            </span>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
